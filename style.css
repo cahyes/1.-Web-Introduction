@@ -1,97 +1,121 @@
-* {
+*,
+html {
   padding: 0;
   margin: 0;
 }
 
+/* Navigasi */
 nav {
+  width: 100%;
   display: flex;
+
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+
   height: 80px;
   background-color: lightsteelblue;
 }
 
 nav ul {
   display: flex;
-
+  flex-wrap: wrap;
   justify-content: right;
   list-style: none;
 }
-ul a {
+nav ul a {
+  padding: 10px;
   text-decoration: none;
   margin-right: 50px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-ul a:hover {
+nav ul a:hover {
   color: chocolate;
+  text-decoration: underline;
 }
 
+/* Profil */
 .profil {
   width: 90%;
   padding: 30px;
   display: flex;
+  flex-direction: row;
   border: solid 0.5px grey;
   margin: 20px auto;
   border-radius: 10px;
   box-shadow: 1px 1px 10px black;
 }
-
-.desc-all {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.desc {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 12px;
-}
-
 img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   margin-right: 20px;
 }
-.kontak {
+.contactProfil {
   height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 50px;
-  margin-right: 50px;
+  padding: 0 25px;
   border-right: solid grey 1px;
-}
-
-.kontak p {
-  margin-bottom: 50px;
+  align-items: space-around;
 }
 .contactButton {
   padding: 20px 20px;
+  margin-top: 30px;
   background-color: cornflowerblue;
 }
 .resume {
   padding: 20px 20px;
 }
+.contactProfil h1 {
+  margin-bottom: 10px;
+}
 
+/* deskripsi */
+.desc-all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
+}
+.desc-all div {
+  width: 50%;
+  align-items: center;
+}
+.desc-all li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+.descLable {
+  display: flex;
+  font-weight: 700;
+}
+.descValue {
+  display: flex;
+}
+
+/* form */
 form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   padding: 0 30px 0 20px;
 }
 
 input {
   margin-bottom: 20px;
   width: 100%;
-  height: 20px;
-  padding: 10px;
+
+  padding: 10px 0 10px 10px;
 }
 
 form button {
   color: white;
   width: 100%;
   height: 40px;
+  margin-bottom: 10px;
   background-color: green;
 }
 
@@ -99,4 +123,50 @@ button:hover {
   cursor: pointer;
   background-color: springgreen;
   color: black;
+}
+
+/* responsive */
+/* style sendiri */
+@media (min-width: 401px) and (max-width: 769px) {
+  .profil {
+    padding: 0px;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+  }
+  h1 {
+    font-size: 18pt;
+  }
+  p {
+    font-size: 15pt;
+  }
+
+  .contactProfil button {
+    font-size: 10pt;
+    padding: 10px 10px;
+  }
+}
+/* sesuai tugas */
+@media (min-width: 321px) and (max-width: 400px) {
+  .profil {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+  }
+  .contactProfil {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  .desc-all {
+    margin-left: -30px;
+  }
 }
