@@ -21,11 +21,11 @@
     </nav>
     <section class="profil">
       <div>
-        <img src="profil.png" alt="Cahya Ravi" />
+        <img src="./asset/image/cool-profile-pictures-for-steam-Bs8ZXK8CcAAhBDw.jpg" alt="Cahya Ravi" />
       </div>
       <div class="contactProfil">
-        <h1>Cahya Ravi Imamuna</h1>
-        <p>Front End Designer</p>
+        <h1 class="nama">Cahya Ravi Imamuna</h1>
+        <p class="role">Front End Designer</p>
         <div>
           <a href="http://instagram.com/creewol"><button class="contactButton">Kontak</button></a>
           <a href="#"><button class="resume">Resume</button></a>
@@ -42,33 +42,35 @@
           </ul>
         </div>
         <div class="descValue">
-          <ul>
+          <ul class="listValue">
             <li>: Fulltime</li>
             <li>: 19</li>
             <li>: Malang</li>
             <li>: 2 Tahun</li>
-            <li>:jongjava234@gmail.com</li>
+            <li>: jongjava234@gmail.com</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <form action="">
+    <form id="myForm">
       <label for="nama">Nama</label>
-      <input type="text" />
+      <input type="text" id="name" placeholder="masukkan nama anda " />
       <label for="role">Role</label>
-      <input type="text" />
-      <label for="availibility">Availibility</label>
-      <input type="text" />
+      <input type="text" id="role" placeholder="masukkan posisi anda " />
+      <label for="availability">Availability</label>
+      <input type="text" id="availability" placeholder="masukkan jam kerja anda " />
       <label for="usia">Usia</label>
-      <input type="text" />
+      <input type="text" id="usia" placeholder="masukkan usia anda " />
       <label for="lokasi">Lokasi</label>
-      <input type="text" />
+      <input type="text" id="lokasi" placeholder="masukkan asal anda " />
       <label for="experience">Years Experience</label>
-      <input type="text" />
+      <input type="text" id="experience" placeholder="masukkan berapa tahun bekerja " />
       <label for="email">Email</label>
-      <input type="email" />
-      <button type="submit">Submit</button>
+      <input type="text" id="email" placeholder="masukkan email anda " />
+      <button type="submit" class="submit">Submit</button>
     </form>
+
+    <script src="script.js"></script>
   </body>
 </html>

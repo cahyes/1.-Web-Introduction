@@ -81,7 +81,7 @@ img {
   box-sizing: border-box;
 }
 .desc-all div {
-  width: 50%;
+  width: 120px;
   align-items: center;
 }
 .desc-all li {
