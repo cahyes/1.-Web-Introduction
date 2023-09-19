@@ -37,7 +37,9 @@ form.addEventListener("submit", function (e) {
   document.getElementById("experience").value = "";
   document.getElementById("email").value = "";
 
-  //ini bagia paling penting karena ketika form disubmit terrefresh secara default
+  //ini bagian paling penting karena ketika form disubmit terrefresh secara default
   // Mencegah refresh halaman
   e.preventDefault();
 });
+
+let aku = [1, "2", "3"];
